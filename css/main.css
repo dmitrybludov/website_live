@@ -197,8 +197,16 @@ ol li {
 
 /* NAVIGATION BAR + HEADER STYLE START */
 
+.wrapper {
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+}
+
 header {
-    background: red;
+    background: transparent;
+    width: 100%;
+    position: relative;
 }
 
 header.sticky {
@@ -217,7 +225,6 @@ body .scroll header.sticky {
 
 .nav-wrapper {
     max-width: 1200px;
-    background: #000;
     margin: 0 auto;
     position: relative;
     padding: 7px 0;
@@ -249,4 +256,66 @@ nav.nav-wrapper ul li a:hover {
 
 header .logo {
     max-width: 100px;
+}
+
+/* PARALLAX PAGE STYLE STARTS */
+
+.cover-main {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/hero-bg.jpg') right bottom;
+    background-repeat: no-repeat;
+    -webkit-background-size: contain;
+    background-size: cover;
+    height: 60vh;
+}
+
+ul#scene {
+    margin-top: 100px;
+}
+
+ul#scene li.name {
+    text-align: center;
+    font-size: 40px;
+    line-height: 45px;
+    text-transform: uppercase;
+    color: white;
+    width: 100%;
+}
+
+ul#scene li.title {
+    text-align: center;
+    font-size: 30px;
+    line-height: 35px;
+    color: white;
+    width: 100%;
+    margin-top: 60px;
+}
+
+.btn {
+    margin-top: 150px;
+    width: 100%;
+    text-align: center;
+}
+
+.portfolio-btn, .contact-btn {
+    margin: 0 auto;
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.portfolio-btn:hover, .contact-btn:hover {
+    background: white;
+    color: black;
+}
+
+.portfolio-btn {
+    margin-right: 30px;
+}
+
+.contact-btn {
+    margin-left: 30px;
 }
