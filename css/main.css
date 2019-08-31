@@ -140,6 +140,10 @@ q:after {
 
 /*HELPER CLASS BEGIN*/
 
+img {
+    width: 100%;
+}
+
 .alignLeft {
     float: left;
 }
@@ -214,9 +218,10 @@ header.sticky {
     top: 0;
     left: 0;
     right: 0;
-    background: green;
+    background: rgba(0, 0, 0, 0.85);
     transform: translateY(-200%);
     transition: .2s;
+    z-index: 5;
 }
 
 body .scroll header.sticky {
@@ -319,3 +324,46 @@ ul#scene li.title {
 .contact-btn {
     margin-left: 30px;
 }
+
+/* PARALLAX PAGE STYLE END */
+
+
+/* MASONRY JS STYLES START */
+
+.masonry-grid {
+    position: relative;
+}
+
+.grid {
+    margin: 0 auto;
+}
+
+.grid-item {
+    width: 450px;
+    margin-bottom: 10px;
+}
+
+.tall-img {
+    height: 680px;
+}
+
+h2.sub-title {
+    position: relative;
+    display: block;
+    margin: 70px auto;
+    text-align: center;
+    font-size: 35px;
+    line-height: 40px;
+}
+
+h2.sub-title::after {
+    display: block;
+    height: 2px;
+    background: black;
+    content: "";
+    width: 100px;
+    margin: 30px auto 0 auto;
+
+}
+
+/* MASONRY JS STYLES END */
