@@ -224,7 +224,7 @@ header.sticky {
     z-index: 5;
 }
 
-body .scroll header.sticky {
+body.scroll header.sticky {
     transform: translateY(0);
 }
 
