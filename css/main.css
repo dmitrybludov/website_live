@@ -500,6 +500,20 @@ footer h1 {
 
 /* RESPONSIVE MENU START */
 
+@media only screen and (max-width: 1160px) {
+
+    section.beating-heart span {
+        font-size: 30px;
+        line-height: 35px;
+    }
+
+    .heart {
+        width: 50px;
+        margin: 0 20px;
+    }
+
+}
+
 @media only screen and (max-width: 768px) {
 
     .menu-trigger {
@@ -509,7 +523,7 @@ footer h1 {
         display: block;
         z-index: 10;
         position: absolute;
-        right: 10px;
+        right: 20px;
         top: 15px;
     }
 
@@ -520,7 +534,7 @@ footer h1 {
         left: 0;
         bottom: 0;
         background: rgba(0, 0, 0, 0.72);
-        z-index: 5;
+        z-index: 6;
         display: none;
     }
 
@@ -532,7 +546,7 @@ footer h1 {
         content: "";
         position: fixed;
         top: 10px;
-        right: 10px;
+        right: 20px;
         z-index: 20;
     }
 
@@ -578,6 +592,74 @@ footer h1 {
     body.menu-is-active .menu-trigger {
         display: none;
     }
+}
+
+@media only screen and (max-width: 560px) {
+
+    ul#scene li.name {
+        font-size: 22px;
+        line-height: 22px;
+    }
+
+    ul#scene li.title {
+        font-size: 20px;
+        line-height: 25px;
+        margin-top: 40px;
+    }
+
+    div.grid {
+        width: initial !important;
+    }
+
+    .btn {
+        margin-top: 80px;
+    }
+
+    ul#scene {
+        margin-top: 50px;
+    }
+
+    .portfolio-btn, .contact-btn {
+        display: block;
+        margin: 20px auto;
+        max-width: 120px;
+        font-size: 15px;
+        line-height: 20px;
+        padding: 10px 0;
+    }
+
+    h2.sub-title {
+        margin: 30px auto;
+        font-size: 23px;
+        line-height: 28px;
+    }
+
+    section.beating-heart {
+        height: initial;
+    }
+
+    footer {
+        height: 100px;
+    }
+
+    footer h1 {
+        font-size: 15px;
+        line-height: 20px;
+        bottom: 40px;
+    }
+
+    .grid-item {
+        width: initial;
+    }
+
+    .tall-img {
+        height: initial;
+    }
+
+    .menu {
+        max-width: 200px;
+    }
+
 }
 
 /* RESPONSIVE MENU END */
